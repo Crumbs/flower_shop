@@ -1,0 +1,31 @@
+<h1>Listing work_orders</h1>
+
+<table>
+  <tr>
+    <th>Order number</th>
+    <th>Order name</th>
+    <th>Order price</th>
+    <th>Customer name</th>
+    <th>Design notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @work_orders.each do |work_order| %>
+  <tr>
+    <td><%= work_order.order_number %></td>
+    <td><%= work_order.order_name %></td>
+    <td><%= work_order.order_price %></td>
+    <td><%= work_order.customer_name %></td>
+    <td><%= work_order.design_notes %></td>
+    <td><%= link_to 'Show', work_order %></td>
+    <td><%= link_to 'Edit', edit_work_order_path(work_order) %></td>
+    <td><%= link_to 'Destroy', work_order, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Work order', new_work_order_path %>

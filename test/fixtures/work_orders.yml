@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  order_number: 1
+  order_name: MyString
+  order_price: 1
+  customer_name: MyString
+  design_notes: MyText
+
+two:
+  order_number: 1
+  order_name: MyString
+  order_price: 1
+  customer_name: MyString
+  design_notes: MyText
